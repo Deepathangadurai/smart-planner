@@ -1,0 +1,6 @@
+__pycache__/
+instance/
+.pytest_cache/
+.env
+todo.db
+venv/

@@ -1,0 +1,173 @@
+/* --- 1. Global Variables & Reset --- */
+:root {
+    --primary: #4f46e5;
+    --success: #10b981;
+    --bg: #f8fafc;
+    --white: #ffffff;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --danger: #ef4444;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    background: var(--bg); 
+    color: var(--text); 
+    line-height: 1.5; 
+}
+
+/* --- 2. Auth Pages (Login & Signup) --- */
+.auth-page { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.auth-container { 
+    background: var(--white); 
+    padding: 2.5rem; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+    width: 100%; 
+    max-width: 400px; 
+    text-align: center; 
+}
+
+.auth-header img { margin-bottom: 1rem; }
+.auth-header h2 { margin-bottom: 0.5rem; font-size: 1.5rem; }
+.auth-header p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+.auth-form input { 
+    width: 100%; 
+    padding: 0.8rem; 
+    margin-bottom: 1rem; 
+    border: 1px solid var(--border); 
+    border-radius: 8px; 
+    outline: none;
+}
+
+.btn-primary { 
+    width: 100%; 
+    padding: 0.8rem; 
+    background: var(--primary); 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    font-weight: 600; 
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { background: #4338ca; }
+
+.auth-footer { margin-top: 1.5rem; font-size: 0.9rem; }
+.auth-footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
+
+/* --- 3. Dashboard Navbar --- */
+.navbar { 
+    background: var(--white); 
+    border-bottom: 1px solid var(--border); 
+    padding: 1rem 0; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
+
+.nav-content { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.brand { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    font-size: 1.4rem; 
+    color: var(--primary); 
+    font-weight: 700; 
+}
+
+.user-meta { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+.greeting-wrapper { text-align: right; }
+.time-msg { display: block; font-size: 0.75rem; color: var(--text-muted); }
+.user-name { font-weight: 700; font-size: 1rem; }
+
+.logout-btn { color: var(--text-muted); font-size: 1.2rem; transition: 0.3s; }
+.logout-btn:hover { color: var(--danger); }
+
+/* --- 4. Dashboard Content Grid --- */
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+/* Unified Stats Row */
+.stats-row { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 1.5rem; 
+    margin-bottom: 2rem; 
+}
+
+.stat-card { 
+    background: var(--white); 
+    padding: 1.5rem; 
+    border-radius: 12px; 
+    border: 1px solid var(--border); 
+}
+
+.stat-header { display: flex; justify-content: space-between; margin-bottom: 10px; font-weight: 600; }
+.progress-track { background: #f1f5f9; height: 8px; border-radius: 10px; overflow: hidden; }
+.progress-fill { background: var(--success); height: 100%; transition: width 0.4s ease; }
+
+/* Action Bar */
+.action-bar { margin-bottom: 3rem; }
+.add-goal-form { display: flex; gap: 1rem; background: var(--white); padding: 0.8rem; border-radius: 12px; border: 1px solid var(--border); }
+.input-wrapper { flex: 2; display: flex; align-items: center; gap: 10px; padding-left: 10px; }
+.input-wrapper input { border: none; width: 100%; outline: none; padding: 10px 0; font-size: 1rem; }
+.add-goal-form select { border: 1px solid var(--border); border-radius: 8px; padding: 0 1rem; background: var(--bg); cursor: pointer; }
+.btn-add { background: var(--primary); color: white; border: none; padding: 0 1.5rem; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+
+/* Unified Board Grid */
+.board-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+}
+
+.col-header { display: flex; justify-content: space-between; margin-bottom: 1rem; border-bottom: 2px solid var(--primary); padding-bottom: 8px; }
+
+.task-card { 
+    background: var(--white); 
+    padding: 1rem; 
+    border-radius: 10px; 
+    border: 1px solid var(--border); 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    margin-bottom: 10px; 
+}
+
+.task-card.done { opacity: 0.6; background: #f1f5f9; }
+.task-card .text { flex: 1; font-weight: 500; }
+.check { color: var(--primary); font-size: 1.2rem; }
+.del { color: #cbd5e1; font-size: 0.8rem; }
+.del:hover { color: #ef4444; }
+
+/* --- 5. Responsive Design --- */
+@media (max-width: 900px) {
+    .board-grid { grid-template-columns: 1fr; }
+    .nav-content { padding: 0 1rem; }
+    .stats-row { grid-template-columns: 1fr; }
+    .add-goal-form { flex-direction: column; }
+}
