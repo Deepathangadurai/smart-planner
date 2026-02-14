@@ -1,19 +1,18 @@
-# 🚀 SmartPlanner
+#  SmartPlanner
 
 **SmartPlanner** is a data-driven productivity dashboard designed to help users organize their life through structured goal setting. Unlike standard to-do lists, it categorizes tasks into **Daily**, **Weekly**, and **Monthly** objectives, offering a high-level view of your personal progress.
 
-![SmartPlanner Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot+Here)
-*(Add your own screenshot here later!)*
 
-## ✨ Key Features
 
-* **🔐 Secure Authentication:** Complete user registration and login system with password hashing (Werkzeug security).
-* **📊 Data Visualization:** Dynamic progress bars that calculate real-time completion rates for each category.
-* **✅ Full CRUD System:** Create, Read, Update (mark complete), and Delete tasks instantly.
-* **📱 Responsive Design:** Professional UI built with CSS Grid/Flexbox that works on mobile and desktop.
-* **🛡️ Duplicate Protection:** Smart logic to prevent duplicate usernames and ensure data integrity.
+##  Key Features
 
-## 🛠️ Tech Stack
+* ** Secure Authentication:** Complete user registration and login system with password hashing (Werkzeug security).
+* ** Data Visualization:** Dynamic progress bars that calculate real-time completion rates for each category.
+* ** Full CRUD System:** Create, Read, Update (mark complete), and Delete tasks instantly.
+* ** Responsive Design:** Professional UI built with CSS Grid/Flexbox that works on mobile and desktop.
+* ** Duplicate Protection:** Smart logic to prevent duplicate usernames and ensure data integrity.
+
+##  Tech Stack
 
 * **Backend:** Python, Flask
 * **Database:** SQLite, SQLAlchemy
