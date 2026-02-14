@@ -1,18 +1,18 @@
-#  SmartPlanner
+# SmartPlanner
 
 **SmartPlanner** is a data-driven productivity dashboard designed to help users organize their life through structured goal setting. Unlike standard to-do lists, it categorizes tasks into **Daily**, **Weekly**, and **Monthly** objectives, offering a high-level view of your personal progress.
 
 
 
-##  Key Features
+## Key Features
 
-* ** Secure Authentication:** Complete user registration and login system with password hashing (Werkzeug security).
-* ** Data Visualization:** Dynamic progress bars that calculate real-time completion rates for each category.
-* ** Full CRUD System:** Create, Read, Update (mark complete), and Delete tasks instantly.
-* ** Responsive Design:** Professional UI built with CSS Grid/Flexbox that works on mobile and desktop.
-* ** Duplicate Protection:** Smart logic to prevent duplicate usernames and ensure data integrity.
+* **Secure Authentication:** Complete user registration and login system with password hashing (Werkzeug security).
+* **Data Visualization:** Dynamic progress bars that calculate real-time completion rates for each category.
+* **Full CRUD System:** Create, Read, Update (mark complete), and Delete tasks instantly.
+* **Responsive Design:** Professional UI built with CSS Grid/Flexbox that works on mobile and desktop.
+* **Duplicate Protection:** Smart logic to prevent duplicate usernames and ensure data integrity.
 
-##  Tech Stack
+## Tech Stack
 
 * **Backend:** Python, Flask
 * **Database:** SQLite, SQLAlchemy
@@ -20,7 +20,7 @@
 * **Icons:** Font Awesome 6
 * **Fonts:** Plus Jakarta Sans (Google Fonts)
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 Want to run this project locally? Follow these steps:
 
@@ -54,13 +54,13 @@ Want to run this project locally? Follow these steps:
 5.  **Visit the App**
     Open your browser and go to `http://127.0.0.1:5000`
 
-##  Contributing
+## Contributing
 
 Contributions are welcome! Feel free to fork this repository and submit a pull request.
 
-##  License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
 
 ---
-*Built with  by [Deepa Thangadurai](https://github.com/Deepathangadurai)*
+*Built by [Deepa Thangadurai](https://github.com/Deepathangadurai)*
